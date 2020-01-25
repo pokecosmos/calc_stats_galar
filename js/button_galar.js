@@ -12,6 +12,12 @@ function mega_button(){
 		document.nForm.elements['mega0'].value="通常";
 		document.nForm.elements['mega1'].value="ダルマ";
 		visi(2);
+	}else if((document.nForm.elements['pokename'].value=="コオリッポ")||
+		(document.nForm.elements['pokename'].value=="コオリッポ(アイス)")||
+		(document.nForm.elements['pokename'].value=="コオリッポ(ナイス)")){
+		document.nForm.elements['mega0'].value="アイス";
+		document.nForm.elements['mega1'].value="ナイス";
+		visi(2);
 	}else if((document.nForm.elements['pokename'].value=="ヨワシ")||
 		(document.nForm.elements['pokename'].value=="ヨワシ(単独)")||
 		(document.nForm.elements['pokename'].value=="ヨワシ(群れ)")){
@@ -104,6 +110,14 @@ function megachange(num){
  			document.nForm.elements['pokename'].value="ヒヒダルマ(通常)";
  		}else if(parseInt(num)==1){
  			document.nForm.elements['pokename'].value="ヒヒダルマ(ダルマ)";
+ 		}
+ 	}else if((document.nForm.elements['pokename'].value=="コオリッポ")||
+		(document.nForm.elements['pokename'].value=="コオリッポ(アイス)")||
+		(document.nForm.elements['pokename'].value=="コオリッポ(ナイス)")){
+		if(parseInt(num)==0){
+ 			document.nForm.elements['pokename'].value="コオリッポ(アイス)";
+ 		}else if(parseInt(num)==1){
+ 			document.nForm.elements['pokename'].value="コオリッポ(ナイス)";
  		}
  	}else if((document.nForm.elements['pokename'].value=="ヨワシ")||
 		(document.nForm.elements['pokename'].value=="ヨワシ(単独)")||
