@@ -19,8 +19,8 @@ function mega_button(){
 		document.nForm.elements['mega1'].value="ナイス";
 		visi(2);
 	}else if((document.nForm.elements['pokename'].value=="イエッサン")||
-		(document.nForm.elements['pokename'].value=="イエッサン(♂)")||
-		(document.nForm.elements['pokename'].value=="イエッサン(♀)")){
+		(document.nForm.elements['pokename'].value=="イエッサン♂")||
+		(document.nForm.elements['pokename'].value=="イエッサン♀")){
 		document.nForm.elements['mega0'].value="♂";
 		document.nForm.elements['mega1'].value="♀";
 		visi(2);
@@ -126,12 +126,12 @@ function megachange(num){
  			document.nForm.elements['pokename'].value="コオリッポ(ナイス)";
  		}
  	 	}else if((document.nForm.elements['pokename'].value=="イエッサン")||
-		(document.nForm.elements['pokename'].value=="イエッサン(♂)")||
-		(document.nForm.elements['pokename'].value=="イエッサン(♀)")){
+		(document.nForm.elements['pokename'].value=="イエッサン♂")||
+		(document.nForm.elements['pokename'].value=="イエッサン♀")){
 		if(parseInt(num)==0){
- 			document.nForm.elements['pokename'].value="イエッサン(♂)";
+ 			document.nForm.elements['pokename'].value="イエッサン♂";
  		}else if(parseInt(num)==1){
- 			document.nForm.elements['pokename'].value="イエッサン(♀)";
+ 			document.nForm.elements['pokename'].value="イエッサン♀";
  		}
  	}else if((document.nForm.elements['pokename'].value=="ヨワシ")||
 		(document.nForm.elements['pokename'].value=="ヨワシ(単独)")||
