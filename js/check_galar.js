@@ -93,7 +93,7 @@ function ncalc(num){
 		}
 	}
 	document.nForm.elements[nn[num]].value=n;
-	moji();
+	moji(); k_color();
 }
 //努力値を逆算する
 function dcalc(num){
@@ -309,6 +309,17 @@ function ssum(){
 		n += parseInt(document.nForm.elements[sn[i]].value);
 	}
 	document.nForm.elements[sn[6]].value = n;
+}
+
+//個体値が変更されてるとき色を変える
+function k_color(){
+	for(i=0; i<6; i++){
+		if(document.nForm.elements[kn[i]].value == 31){
+			document.nForm.elements[kn[i]].style.color = "black";
+		}else{
+			document.nForm.elements[kn[i]].style.color = "red";
+		}
+	}
 }
 
 //ポケモン名を検索する

@@ -70,7 +70,7 @@ for(i=0; i<6; i++){
 	'<input type="number" name = "' + sn[i] + '" value="100" min="1" max="999" step="1" onclick="ssum();ncalc('+ i +')" onblur="ssum();ncalc('+ i +')"></td><td>',
 	'<input type="number" name = "' + kn[i] + '" value="31" min="0" max="31" step="1"  onclick="ncalc('+ i +')" onblur="ncalc('+ i +')"></td><td>',
 	'<input type="button" class="button" value ="×" onclick="setvalue(kn['+i+'] ,-1); ncalc('+ i +')">',//------------------------------------------------------------×ボタン
-	'<input type="button" class="button" value ="0" onclick="setvalue(kn['+i+'] ,0); ncalc('+ i +') ">',//-----------0ボタン
+	'<input type="button" class="button" value ="0" onclick="setvalue(kn['+i+'] ,0); ncalc('+ i +')">',//-----------0ボタン
 	'<input type="button" class="button" value ="31" onclick="setvalue(kn['+i+'] ,31); ncalc('+ i +')"></td>');//---31ボタン
 	if(i==0){
 		document.write('<td bgcolor="#FF97C2" align="center">＋</td><td bgcolor="#8EB8FF" align="center">－');
