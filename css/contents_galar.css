@@ -35,5 +35,10 @@ input.mega{
 	width: 60px;
 	visibility: hidden;
 }
-input.
 
+/*-- スマホ版非表示設定  --*/
+@media screen and(max-width: 768px){
+	input.pc{
+		display:none;
+	}
+}
