@@ -37,7 +37,7 @@ input.mega{
 }
 
 /*-- スマホ版非表示設定  --*/
-@media screen and (max-width: 768px){
+@media screen and (max-width: 500px){
 	input.pc{
 		display:none;
 	}
