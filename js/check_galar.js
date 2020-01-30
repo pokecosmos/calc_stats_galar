@@ -322,36 +322,10 @@ function k_color(){
 	}
 }
 
-//ポケモン名を検索する
-//部分一致で表示できた　次は変換バグを直したい　入力中の文字がひらがなが1字になるごとにまとめて追加入力される　文字が増える
-//カタカナに変換してからでないと認識してくれない
-
-
+//検索候補つくれてないのでとりあえずカタカナ変換だけ
 function pokeserach(){
 	var elm = hiraganaToKatakana(document.getElementById('pokename').value);
-	var j = 0;
-	var e = document.getElementById('combolist');
-	var e2 = '';
-	if(elm.length >= 1){
-		for(i=0; i<pokemon.length; i++){
-			var elm3 = pokemon[i][0];
-			var index = elm3.indexOf(elm);
-			if(index != -1){
-				e2 += '<option value = "'+ pokemon[i][0] +'"></option>';
-				j++;
- 			}
- 			if(j >= 20){
- 				break;
- 			}
-		}
-		document.getElementById('pokename').value = elm;//挿入するけど2重になっていく
-		
-		while (e.firstChild){
-			e.removeChild(e.firstChild);
-		}
-		e.innerHTML += e2;
-	}
-	
+	document.getElementById('pokename').value = elm;
 }
 
 //ひらがな→カタカナ変換
