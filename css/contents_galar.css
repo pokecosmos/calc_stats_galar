@@ -32,7 +32,8 @@ input.check{
 	width: 20px;
 }
 input.mega{
-	width: 60px;
+	width: 70px;
+	height: 26px;
 	visibility: hidden;
 }
 
