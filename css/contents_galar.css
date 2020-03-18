@@ -20,6 +20,10 @@ input.button{
 	width: 30px;
 	padding: 1px;
 }
+input.taikyu{
+	width: 65px;
+	padding: 1px;
+}
 input.updown{
 	width: 19px;
 	padding: 1px;
