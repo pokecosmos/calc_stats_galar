@@ -355,12 +355,7 @@ function taikyu_tyosei(){
 	
 	d_max = parseInt(document.nForm.elements['d6'].value) + now_dh + now_db + now_dd;
 	
-	//var_dh; var_db; var_dd;
-	//var_nh; var_nb; var_nd;
-	//var_sisu_hb; var_sisu_hd; var_sisu_hbd;
-	
 	x_nh = 0; x_nb = 0; x_nd = 0; x_sisu_hbd = 0;
-	
 	
 	var_dh = d_max;
 	if(var_dh > 252){
