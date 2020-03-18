@@ -359,7 +359,7 @@ function taikyu_tyosei(){
 	//var_nh; var_nb; var_nd;
 	//var_sisu_hb; var_sisu_hd; var_sisu_hbd;
 	
-	x_nh = 0; x_nb = 0; x_bd = 0; x_sisu_hbd = 0;
+	x_nh = 0; x_nb = 0; x_nd = 0; x_sisu_hbd = 0;
 	
 	
 	var_dh = d_max;
