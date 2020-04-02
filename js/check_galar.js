@@ -92,6 +92,12 @@ function ncalc(num){
 			n = Math.floor(n*0.9);
 		}
 	}
+	var p = document.nForm.elements['pokename'].value;
+	if(p == "ヌケニン"){
+		if(num == 0){
+			n = 1;
+		}
+	}
 	document.nForm.elements[nn[num]].value=n;
 	moji(); k_color();
 }
