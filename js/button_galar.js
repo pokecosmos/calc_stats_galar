@@ -63,7 +63,7 @@ function mega_button(){
 		(p=="ランドロス")||(p=="ランドロス(化身)")||(p=="ランドロス(霊獣)")){
 		visi(2, "化身", "霊獣");
 	}else if((p=="キュレム")||(p=="キュレム(通常)")||(p=="ブラックキュレム")||(p=="ホワイトキュレム")){
-		visi(3, "通常", "ホワイト", "ブラック");
+		visi(3, "通常", "ブラック", "ホワイト");
 	}else if((p=="ケルディオ")||(p=="ケルディオ(いつも)")||(p=="ケルディオ(かくご)")){
 		visi(2, "いつも", "かくご");
 	}else if((p=="メロエッタ")||(p=="メロエッタ(ボイス)")||(p=="メロエッタ(ステップ)")){
@@ -95,6 +95,8 @@ function mega_button(){
 		visi(2, "アイス", "ナイス");
 	}else if((p=="イエッサン")||(p=="イエッサン♂")||(p=="イエッサン♀")){
 		visi(2, "♂", "♀");
+	}else if((p=="ストリンダー")||(p=="ストリンダー(ハイ)")||(p=="ストリンダー(ロー)")){
+		visi(2, "ハイ", "ロー");
 	}else if((p=="ザシアン")||(p=="ザシアン(通常)")||(p=="ザシアン(剣の王)")){
 		visi(2, "通常", "剣の王");
 	}else if((p=="ザマゼンタ")||(p=="ザマゼンタ(通常)")||(p=="ザマゼンタ(盾の王)")){
@@ -419,6 +421,12 @@ function megachange(num){
  			document.nForm.elements['pokename'].value="イエッサン♂";
  		}else if(parseInt(num)==1){
  			document.nForm.elements['pokename'].value="イエッサン♀";
+ 		}
+ 	}else if((p=="ストリンダー")||(p=="ストリンダー(ハイ)")||(p=="ストリンダー(ロー)")){
+		if(parseInt(num)==0){
+ 			document.nForm.elements['pokename'].value="ストリンダー(ハイ)";
+ 		}else if(parseInt(num)==1){
+ 			document.nForm.elements['pokename'].value="ストリンダー(ロー)";
  		}
 	}else if((p=="ザシアン")||(p=="ザシアン(通常)")||(p=="ザシアン(剣の王)")){
 		if(parseInt(num)==0){
