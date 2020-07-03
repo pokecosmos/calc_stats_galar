@@ -104,6 +104,10 @@ function mega_button(){
 		visi(2, "通常", "盾の王");
 	}else if((p=="ウーラオス")||(p=="ウーラオス(いちげき)")||(p=="ウーラオス(れんげき)")){
 		visi(2, "いちげき", "れんげき");
+	}else if((p=="カラナクシ")||(p=="カラナクシ(西の海)")||(p=="カラナクシ(東の海)")){
+		visi(2, "西の海", "東の海");
+	}else if((p=="トリトドン")||(p=="トリトドン(西の海)")||(p=="トリトドン(東の海)")){
+		visi(2, "西の海", "東の海");
 	}else{
 		visi(0);
 	}
@@ -449,6 +453,18 @@ function megachange(num){
  			document.nForm.elements['pokename'].value="ウーラオス(いちげき)";
  		}else if(parseInt(num)==1){
  			document.nForm.elements['pokename'].value="ウーラオス(れんげき)";
+ 		}
+ 	}else if((p=="カラナクシ")||(p=="カラナクシ(西の海)")||(p=="カラナクシ(東の海)")){
+		if(parseInt(num)==0){
+ 			document.nForm.elements['pokename'].value="カラナクシ(西の海)";
+ 		}else if(parseInt(num)==1){
+ 			document.nForm.elements['pokename'].value="カラナクシ(東の海)";
+ 		}
+ 	}else if((p=="トリトドン")||(p=="トリトドン(西の海)")||(p=="トリトドン(東の海)")){
+		if(parseInt(num)==0){
+ 			document.nForm.elements['pokename'].value="トリトドン(西の海)";
+ 		}else if(parseInt(num)==1){
+ 			document.nForm.elements['pokename'].value="トリトドン(東の海)";
  		}
 	}
 	setpokemon();
