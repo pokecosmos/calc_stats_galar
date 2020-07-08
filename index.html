@@ -14,9 +14,13 @@
 <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0,maximum-scale=3.0">
 <title>ステータス計算機 for ポケモン ソード/シールド</title>
 <link rel="stylesheet" type="text/css" href="css/contents_galar.css">
+<link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
 <script type="text/javascript" src="js/check_galar.js"></script>
 <script type="text/javascript" src="js/button_galar.js"></script>
 <script type="text/javascript" src="js/syuzokuti_galar.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/autocomplete.js"></script>
 <script type="text/javascript">
 <!--
 //使用している配列
@@ -36,7 +40,7 @@ var nnn = 175;
 <font size="5" color="#87CEEB" face="ＭＳ Ｐ明朝,ＭＳ 明朝">ポケモンステータス計算機 for ポケモン ソード/シールド</font></br></br>
 <form name="nForm">
 <table border="0">
-<tr><td></td><td colspan="2"  width="160"><input width="300" type="search" id ="pokename" name = "pokename" class="name" value="" autocomplete="off" placeholder="ポケモン名" onChange="pokeserach()" onblur="setpokemon()">
+<tr><td></td><td colspan="2"  width="160"><input width="300" type="search" id ="pokename" name = "pokename" class="name" value="" placeholder="ポケモン名" onblur="setpokemon()">
 </td><td rowspan="2">
 <input type="button" class="mega" name="mega0" value="通常" onclick="megachange(0)">
 <input type="button" class="mega" name="mega1" value="メガ" onclick="megachange(1)"> 
