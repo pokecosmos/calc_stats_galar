@@ -99,7 +99,7 @@ function ncalc(num){
 		}
 	}
 	document.nForm.elements[nn[num]].value=n;
-	moji(); k_color();
+	moji(); k_color(); scalc();
 }
 //努力値を逆算する
 function dcalc(num){
@@ -141,7 +141,7 @@ function dcalc(num){
 		document.nForm.elements[dn[num]].value = n;
 	}
 	
-	dsum();moji();
+	dsum();moji();scalc();
 }
 //残り努力値の合計を計算する
 function dsum(){
@@ -350,6 +350,43 @@ function ncalc2(num, dnum){
 	}
 	return(n);
 }
+
+//S実数値計算用
+function scalc(){
+	n = parseInt(document.nForm.elements['n5'].value);
+	s_rank = parseInt(document.nForm.elements['rank'].value);
+	
+	//--Sランク判定
+	if(s_rank >= 1){
+		n *= (s_rank+2) / 2;
+	}else if(s_rank <= -1){
+		s_rank *= -1;
+		n *= 2 / (s_rank + 2);
+	}
+	n = Math.floor(n);
+	
+	//--麻痺判定
+	if(document.nForm.elements['ch_m'].checked == true){
+			n = Math.floor(n/2);
+	}
+	
+	//--特性判定
+	n *= parseInt(document.nForm.elements['skill'].value)/2;
+	n = Math.floor(n);
+	
+	//--道具判定
+	n *= parseInt(document.nForm.elements['sitem'].value)/2;
+	n = Math.floor(n);
+	
+	//--追い風判定
+	if(document.nForm.elements['ch_o'].checked == true){
+			n = Math.floor(n*2);
+	}
+	document.nForm.elements['s_result'].value = n;
+}
+
+
+
 
 //耐久振りボタン計算
 function taikyu_tyosei(){

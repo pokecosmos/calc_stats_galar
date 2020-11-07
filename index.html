@@ -51,7 +51,7 @@ var nnn = 175;
 <td  width="80">
 <input type="button" class="button" value ="50" onclick="setvalue('L0', 50);ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)">
 <input type="button" class="button" value ="100" onclick="setvalue('L0', 100);ncalc(0);ncalc(1);ncalc(2);ncalc(3);ncalc(4);ncalc(5)">
-</td></tr>
+</td></tr></table>
 <table border="0">
 <tr><td></td><td>能力値</td><td colspan="2">努力値</td><td>種族値</td><td colspan="2">個体値</td><td colspan="2"  align="center">性格</td></tr>
 <script type="text/javascript">
@@ -92,8 +92,54 @@ document.close();
 <tr><td></td><td align="right">残り</td>
 <td><input type="number" name = "d6" value="510" readonly><input type="button" class="ALL0" value="ALL0" onclick="dreset()"></td>
 <td  align="right">合計</td><td><input type="number" name = "s6" value="600" readonly></td>
-<td colspan="2" align="center"><input type="button" class="taikyu" name="taikyu" value="耐久振り" onclick="taikyu_tyosei()"></td></tr>
+<td colspan="2" align="center"><input type="button" class="taikyu" name="taikyu" value="耐久振り" onclick="taikyu_tyosei()"></td></tr></table>
+</br>
+
+<table border="0">
+
+<tr><td>S実数値<input type="number" value="120" name="s_result" style="width:52px;">
+</td>
+<td>ランク
+<select name="rank" size="1" onChange="scalc()">
+<option value="6">+6</option>
+<option value="5">+5</option>
+<option value="4">+4</option>
+<option value="3">+3</option>
+<option value="2">+2</option>
+<option value="1">+1</option>
+<option value="0" selected="selected">0</option>
+<option value="-1">-1</option>
+<option value="-2">-2</option>
+<option value="-3">-3</option>
+<option value="-4">-4</option>
+<option value="-5">-5</option>
+<option value="-6">-6</option>
+</select>
+</td>
+<td>特性
+<select name="skill" size="1" onChange="scalc()">
+<option value="4">2倍</option>
+<option value="3">1.5倍</option>
+<option value="2" selected="selected">--</option>
+<option value="1">半減</option>
+</select>
+</td>
+<td>道具
+<select name="sitem" size="1" onChange="scalc()">
+<option value="4">2倍</option>
+<option value="3">1.5倍</option>
+<option value="2" selected="selected">--</option>
+<option value="1">半減</option>
+</select>
+</td>
+
+
+<td>麻痺</td><td><input type="checkbox" class="check" name="ch_m" onclick="scalc()"></td><td>追い風</td><td><input type="checkbox" class="check" name="ch_o" onclick="scalc()"></td></tr>
 </table>
+
+
+
+
 <br/>
 <hr/>
 <textarea placeholder="？？？　まじめ 175-120-120-120-120-120" rows="4" cols="80" class="hyoji" id="target" value=""></textarea><hr/>
