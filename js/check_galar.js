@@ -452,4 +452,10 @@ function hiraganaToKatakana(src) {
 		return String.fromCharCode(chr);
 	});
 }
-
+//--個体値リセット
+function kotaiti_riset(){
+  for(i=0; i<6; i++){
+    document.nForm.elements[kn[i]].value = 31;
+  }
+  k_color();
+}
